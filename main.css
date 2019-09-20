@@ -337,18 +337,17 @@ li{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
 
 .about-heading{
 	text-align: center;
 	line-height: 0;
-	margin-bottom: 6rem;
+	margin-bottom: 5rem;
+	margin-top: 8rem;
 	margin-left: 5rem;
 	font-family: 'Kuba Reczny', sans-serif;
 	color: #ff0060;
 	font-size: 8rem;
-	
 }
 
 .about-details p>mark{
@@ -360,7 +359,7 @@ li{
 .profile-img{
 	flex: 1;
 	margin-right: 5rem;
-	margin-bottom: 14rem;
+	margin-bottom: 5rem;
 }
 
 .about-details{

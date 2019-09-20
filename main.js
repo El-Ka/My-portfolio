@@ -60,7 +60,7 @@ $(document).ready(function () {
 	    $('.bar').css('background-color', 'rgba(255, 255, 255, 0.7)');
 	  } else if (scrollPos >= top4 && scrollPos < top5) {
 	    $('.bar').css('background-color', 'rgba(0, 0, 0, 0.7)');
-	  } else if (scrollPos >= top5 && ) {
+	  } else if (scrollPos >= top5) {
 	    $('.bar').css('background-color', 'rgba(255, 255, 255, 0.7)');
 	  }
 	});
