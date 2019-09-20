@@ -111,7 +111,8 @@ header{
 	position: fixed;
 	top: -100vh;
 	z-index: 50;
-	background-color: #2d142c;
+	background-image: url("images/tlo-portfolio7b.jpg") no-repeat center fixed;
+	background-color: rgba(250,250,250,0.95);
 	border-bottom-right-radius:100%; 
 	border-bottom-left-radius:100%;
 	transition:all 650ms cubic-bezier(1,0,0,1);
@@ -134,14 +135,12 @@ li{
 	font-family: 'Kuba Reczny', sans-serif; 
 	font-size:5rem;
 	padding: 1rem;
-
 }
 
 .nav-link:hover,
 .nav-link:focus{
-	background:linear-gradient(to top,#ffffff, #ff0060);
-	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;
+	color:rgba(255,0,96,0.9);
+	text-decoration: underline;
 }
 
 .top-nav.open{
@@ -161,6 +160,7 @@ li{
 	cursor: pointer;
 	z-index: 1500;
 	transition: transform 650ms ease-out;
+	color: white;
 }
 
 .menu-toggler.open{
@@ -169,7 +169,7 @@ li{
 }
 
 .bar{
-	background-color: white;
+	background-color: rgb(255,255,255,0.7);
 	width: 100%;
 	height: 4px;
 	border-radius: 0.8rem;
@@ -377,11 +377,11 @@ li{
 	color: rgba(0, 0, 0, 0.7);
 }
 
-.fa-instagram:hover{
+.fa-linkedin:hover{
 	color: rgba(255, 0, 96, 0.9);
 }
 
-.fa-facebook-square:hover{
+.fa-github-square:hover{
 	color: rgba(255, 0, 96, 0.9);
 }
 
@@ -501,20 +501,24 @@ form{
 	margin:0 auto;
 	font-size: 1.5rem;
 }
+form label{
+	color: rgba(255,255,255,0.8)
+}
+
 
 input,
 select,
 textarea{
 	width: 100%;
 	padding:1rem;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 	border:none;
-	outline-color: #fd57bf;
+	outline-color: rgba(255,0,96,0.9);
 }
 
 input[type="submit"]{
 	width: initial;
-	background-color: #fd57bf;
+	background-color: rgba(255,0,96,0.9);
 	color: #eee;
 	padding: 1rem 2rem;
 	border-radius: 0.8rem;
@@ -524,7 +528,7 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
 	color: #221e3f;
-	background-color: #ffe838;
+	background-color: rgba(255,255,255,0.8);
 }
 
 /*End contact*/
@@ -534,7 +538,7 @@ input[type="submit"]:hover{
 .copyright{
 	width: 100;
 	text-align: center;
-	font-size: 18px;
+	font-size: 12px;
 	font-family: 'Roboto', sans-serif;
 	padding: 2rem 0;
 	position: relative;
@@ -542,7 +546,7 @@ input[type="submit"]:hover{
 .copyright span{
 	width: 100;
 	text-align: center;
-	font-size: 14px;
+	font-size: 25px;
 	font-family: 'Kuba Reczny', sans-serif;
 	padding: 2rem 0;
 	position: relative;

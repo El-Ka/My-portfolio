@@ -27,8 +27,6 @@ $(document).ready(function () {
     	 }, 1000);
 	 });
 
-
-
 	$('#up').on('click', function () {
 		$('html, body').animate({
 			scrollTop: 0
@@ -44,5 +42,43 @@ $(document).ready(function () {
 	});
 
 	/*end AOS animation*/
+
+	/*diffrent color of bar */
+	const top1 = $('#home').offset().top;
+	const top2 = $('#about').offset().top-60;
+	const top3 = $('#services').offset().top-60;
+	const top4 = $('#portfolio').offset().top-60;
+	const top5 = $('#contact').offset().top-60;
+
+	$(document).scroll(function() {
+	  const scrollPos = $(document).scrollTop();
+	  if (scrollPos >= top1 && scrollPos < top2) {
+	    $('.bar').css('background-color', 'rgba(255, 255, 255, 0.7)');
+	  } else if (scrollPos >= top2 && scrollPos < top3) {
+	    $('.bar').css('background-color', 'rgba(0, 0, 0, 0.7)');
+	  } else if (scrollPos >= top3 && scrollPos < top4) {
+	    $('.bar').css('background-color', 'rgba(255, 255, 255, 0.7)');
+	  } else if (scrollPos >= top4 && scrollPos < top5) {
+	    $('.bar').css('background-color', 'rgba(0, 0, 0, 0.7)');
+	  } else if (scrollPos >= top5 && ) {
+	    $('.bar').css('background-color', 'rgba(255, 255, 255, 0.7)');
+	  }
+	});
+	 /*end diffrent color of nav bar */
+
+	/*shorter - diffrent color of nav bar
+	const top1 = $('#home').offset().top;
+	const top2 = $('#about').offset().top-60;
+	const top3 = $('#services').offset().top-60;
+	const top4 = $('#portfolio').offset().top-60;
+	const top5 = $('#contact').offset().top-60;
+
+	$(document).scroll(function() {
+	  const scrollPos = $(document).scrollTop();
+	  if (scrollPos >= top1 && scrollPos < top2 && scrollPos >= top3 && scrollPos < top4 || scrollPos >= top5) {
+	    $('.bar').css('background-color', 'rgba(0, 0, 0, 0.7)');
+	  }
+	});
+	end shorter diffrent color of nav bar */
 
 });
