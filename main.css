@@ -398,16 +398,21 @@ li{
 .my-skills{
 	color:rgba(255,255,255,0.7);
 	margin-top: -5rem;
-	display: flex;
-	grid-template-columns: repeat(auto-fit, minimax(25rem,1fr));
+	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
+  	grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+  	justify-content: center;
 	grid-gap:2.5rem;
 	text-align: center;
+	column-count: 3;
+
 }
 .skill{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	
 	align-items: center;
+
 	padding: 2rem;
 }
 .skill h1{
@@ -536,19 +541,36 @@ input[type="submit"]:hover{
 
 .copyright{
 	width: 100;
-	text-align: center;
-	font-size: 12px;
-	font-family: 'Roboto', sans-serif;
 	padding: 2rem 0;
 	position: relative;
 }
-.copyright span{
-	width: 100;
-	text-align: center;
-	font-size: 25px;
-	font-family: 'Kuba Reczny', sans-serif;
+
+
+.copyright-left{
+	text-align: right;
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
 	padding: 2rem 0;
 	position: relative;
+	float: left;
+	margin-left: 40rem;
+	margin-top: 
+}
+
+.copyright-left h6{
+	font-size:1.5rem;
+}
+
+.copyright-left h6>span{
+	color: rgba(255,0,96,0.9);
+}
+
+.copyright-right{
+	position: relative;
+	float: right;
+	margin-right: 50rem;
+	margin-top:-12.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .up{
