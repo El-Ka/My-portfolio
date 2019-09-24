@@ -2,6 +2,9 @@ $(document).ready(function () {
 	$('.menu-toggler').on('click', function () {
 		$(this).toggleClass('open');
 		$('.top-nav').toggleClass('open');
+		if (true) {
+	    $('.bar').css('background-color', 'rgba(0, 0, 0, 0.7)');
+	  }
 	});
 
 	$('.top-nav .nav-link').on('click', function () {
@@ -43,7 +46,7 @@ $(document).ready(function () {
 
 	/*end AOS animation*/
 
-	/*diffrent color of bar */
+	/*diffrent color of bar 
 	const top1 = $('#home').offset().top;
 	const top2 = $('#about').offset().top-60;
 	const top3 = $('#services').offset().top-60;
@@ -64,9 +67,9 @@ $(document).ready(function () {
 	    $('.bar').css('background-color', 'rgba(255, 255, 255, 0.7)');
 	  }
 	});
-	 /*end diffrent color of nav bar */
+	 end diffrent color of nav bar */
 
-	/*shorter - diffrent color of nav bar
+	/* diffrent color of nav bar*/
 	const top1 = $('#home').offset().top;
 	const top2 = $('#about').offset().top-60;
 	const top3 = $('#services').offset().top-60;
@@ -75,10 +78,15 @@ $(document).ready(function () {
 
 	$(document).scroll(function() {
 	  const scrollPos = $(document).scrollTop();
-	  if (scrollPos >= top1 && scrollPos < top2 && scrollPos >= top3 && scrollPos < top4 || scrollPos >= top5) {
+	  if (scrollPos >= top1 && scrollPos < top2 || scrollPos >= top3 && scrollPos < top4 || scrollPos >= top5) {
+	    $('.bar').css('background-color', 'rgba(250, 250, 250, 0.7)');
+	  } else if (scrollPos >= top2 && scrollPos < top3 || scrollPos >= top4 && scrollPos < top5) {
+	    $('.bar').css('background-color', 'rgba(0, 0, 0, 0.7)');
+	  } else if (('.top-nav').removeClass('open')) {
 	    $('.bar').css('background-color', 'rgba(0, 0, 0, 0.7)');
 	  }
+
 	});
-	end shorter diffrent color of nav bar */
+	/*end shorter diffrent color of nav bar */
 
 });

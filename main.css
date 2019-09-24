@@ -292,7 +292,7 @@ li{
 
 .landing-link-about p{
 	position: absolute;
-	top:140%;
+	top:120%;
 	left:50%;
 	padding: 30px;
 	transform: translate(-50%, -50%);
@@ -314,22 +314,14 @@ li{
 	transform: translate(-50%, -50%);
 	text-align: center;
 	position: absolute;
-	width: 5rem;
-	height: 5rem;
-	background-color: #eee;
+	width: 20rem;
+	height: 20rem;
 	top:155%;
 	left: 50%;
-	border-radius: 100%;
 	display: flex;
-	animation: pulse 4s infinite 3s; 
 	cursor: pointer;
 }
 
-.landing-link-about i{
-	color: #16162d;
-	font-size: 2rem;
-	margin: auto;
-}
 /*End header*/
 
 /*Start about*/
@@ -410,9 +402,7 @@ li{
 .skill{
 	display: flex;
 	flex-direction: column;
-	
 	align-items: center;
-
 	padding: 2rem;
 }
 .skill h1{
@@ -569,7 +559,7 @@ input[type="submit"]:hover{
 	position: relative;
 	float: right;
 	margin-right: 50rem;
-	margin-top:-12.5rem;
+	margin-top:-5rem;
 	margin-bottom: 1.5rem;
 }
 
