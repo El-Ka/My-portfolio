@@ -9,6 +9,6 @@ This is my personal website portfolio. Here I show my recent work, talk a littel
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript with jQuery</li>
-  <li>for some animations I use also AOS library</li>
+  <li>for some animations: AOS library</li>
 </ul>
 
